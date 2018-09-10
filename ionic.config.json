@@ -1,0 +1,7 @@
+{
+  "name": "ionic_book",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
