@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$sw-app-primary:  mat-palette($mat-indigo,  700, 500, 800);
+$sw-app-accent: mat-palette($mat-orange, A400, A100, A700);
+$sw-app-global:  mat-palette($mat-grey, 500, 100, 900);
+
+$sw-app-warn:    mat-palette($mat-red);
+
+$sw-app-theme: mat-light-theme($sw-app-primary, $sw-app-accent, $sw-app-warn);
+
+$tamanho-cabecalho:60px;
+
+
+@include angular-material-theme($sw-app-theme);

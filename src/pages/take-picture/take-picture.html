@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ionic with Google Vision Cloud!</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-card>
+
+    <ion-card-content>
+      <ion-card-title>
+        Faça upload da foto: 
+        <p>{{textoRetorno}}</p>
+      </ion-card-title>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="primary" icon-left (click)="getPhoto('picture')">
+          <ion-icon name='camera'></ion-icon>
+          Tirar Foto da Pergunta
+        </button>
+      </ion-col>
+
+    </ion-row>
+    <img src="{{currentPhoto}}"/>
+  </ion-card>
+
+
+
+</ion-content>

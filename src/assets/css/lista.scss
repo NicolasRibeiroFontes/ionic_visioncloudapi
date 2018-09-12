@@ -1,0 +1,165 @@
+@import "../../theme.scss";
+
+.cabecalho
+{
+  background:map-get($map: $sw-app-primary, $key: lighter);
+  width: 100%;
+  height: 100px;
+}
+.cabecalho mat-card-title
+{
+  font-size: 26px !important;
+  color: #fff;
+  padding-top: 20px;
+  padding-left:20px;
+}
+.cabecalho mat-card-subtitle
+{
+  font-size: 16px !important;
+  color: #ddd;
+  padding-left: 20px;
+  width: 250px !important;
+}
+mat-card-title
+{
+  font-size: 16px !important;
+}
+mat-card-subtitle
+{
+
+}
+
+.quadroUsuarios
+{
+  background: #e1e1e1;
+  min-height: 50vh;
+}
+
+mat-card
+{
+  display: inline-block;
+  width: 24%;
+  margin: 5px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+  min-width: 180px;
+  padding: 0 !important;
+  background: #fff;
+}
+/*
+Caso quira colocar animação no card onhover
+mat-card:hover
+{
+    background-color: map-get($map: $sw-app-accent, $key: default);
+}
+mat-card:hover > *,mat-card:hover > * *
+{
+    color: #fff;
+}
+*/
+mat-slide-toggle
+{
+  float: right;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+.cabecalho .mat-card-header-text
+{
+  width: 100% !important;
+}
+.mat-card:first-child
+{
+  margin-top:24px !important;
+}
+button[mat-fab]
+{
+  float: right;
+  top: 60px;
+  font-size: 20px !important;
+  color: #fff !important;
+}
+
+.quadroUsuarios mat-card-header
+{
+  width: 79%;
+  display: inline-block;
+  padding: 20px;
+  outline: none;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.quadroUsuarios mat-card-content
+{
+  width: 10%;
+  display: inline-block;
+  text-align: center;
+
+}
+.quadroUsuarios mat-card
+{
+  text-align: center;
+  vertical-align: bottom;
+  height: 120px;
+
+}
+mat-card:focus,mat-card:active
+{
+  outline: #757575 solid 2px;
+}
+
+mat-card-content
+{
+  padding-bottom: 15px;
+}
+
+mat-card:hover >  mat-card-content mat-card-actions
+{
+  opacity: 1 !important;
+}
+mat-card-actions
+{
+  opacity: 0;
+  float: right;
+  text-align: right;
+  right: 25px;
+  position: absolute;
+  top: 0%;
+}
+.meioCards
+{
+  margin: auto;
+  padding: 20px;
+  width: 96%;
+  text-align: center;
+}
+
+.mat-card-content:last-child, .mat-card:last-child
+{
+  margin-bottom: 5px !important;
+}
+
+
+mat-card-header input
+{
+  color: #ccc !important;
+  border-radius: 4px;
+  padding: 15px;
+  width: 300px !important;
+  margin-top: 27px !important;
+  background: #fff1;
+
+}
+mat-card-header input:focus
+{
+  background: #fff;
+  color: #000d !important;
+}
+mat-card-header input::placeholder {
+  color: #999 !important;
+  opacity: 1; /* Firefox */
+}
+
+mat-card-header input:focus::placeholder {
+  color: #000d !important;;
+  opacity: 1; /* Firefox */
+}
